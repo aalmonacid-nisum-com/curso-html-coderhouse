@@ -1,72 +1,99 @@
-*{box-sizing: border-box;}
-
-html {
-    scroll-behavior: smooth;
-}
-
-img,figure, section,header,footer,form{margin: 0; padding: 0; width: 100%;}
-
 .text-center{text-align: center;}
 
 body{margin: 0; padding: 0; font-family: 'Roboto', sans-serif; font-size: 16px; color: #141414;}
 
-h1{color: #7E8085; font-size: 54px; font-weight: 500; margin: 0 0 1.5rem 0; padding: 0;}
-h2{color: #7E8085; font-size: 18px; font-weight: 500;}
+h1,h2,h3,h4,h5,h6{font-family: 'Nunito', sans-serif; font-weight: 800;}
+h1{font-size: 54px; margin: 0 0 1.5rem 0; padding: 0; }
+h2{font-size: 18px;}
 
-.container{width: 100%; max-width: 1140px; padding: 0 10px; margin: 0 auto;}
-.img-fluid{width: 100%; height: auto;}
+.title{font-size: 2.5rem; color: #0F172B; margin: 0; padding: 0;}
+.subtitle{font-size: 1.2rem; color: #FEA116;}
 
-.row{display: flex; flex-wrap: wrap;}
-.col-5{width: 20%; flex: 0 0 auto;}
-.col-3{width: 33.33333333%; flex: 0 0 auto;}
-.col-2{width: 50%; flex: 0 0 auto;}
+.text-primary{color: #FEA116;}
 
-.logo{float: left; width: 80px; }
-.nav{float: right; margin-top: 1rem;}
-.nav ul{list-style: none; margin: 0; padding: 0; text-align: right;}
-.nav ul li{display: inline-block; margin: 0 .5rem;}
-.nav a{text-decoration: none; color: #7E8085;}
-.nav a:hover{text-decoration: underline; color: #000;}
+.btn-primary{background-color: #FEA116; border: none;}
+.btn-primary:hover{background-color: #FEAF39;}
 
-.header{margin: 0; padding: .5rem 0; overflow: hidden;}
-.header .active {color: #FF5F3A;}
-.home-productos{text-align: center; margin-bottom: 2rem;}
 
-.pl-0{padding-left: 0!important;}
-.pr-0{padding-right: 0!important;}
+/*header*/
+.top-bar{background-color: #0F172B; color: #F1F1F1; padding: .5rem 0; font-size: .9rem; border-bottom: 1px solid  #f5f5f5;}
+.top-bar a{color: inherit; text-decoration: none;}
+.top-bar .fa-whatsapp{color: #25d366;}
+.top-bar .rrss{font-size: 1.3rem;}
+.top-bar .rrss .fa-brands{margin-left: .5rem;}
 
-.btn{height: 50px; border-radius: 8px; border: 1px solid #979797; cursor: pointer;}
-.btn-primary{background-color: #FFF; width: 140px; margin-right: 1%;}
-.btn-primary:hover{background-color: #979797; width: 140px; margin-right: 1%; color: #FFF;}
+.header .bg-header{background-color: #040404;}
 
-.col-productos{padding: 0.5rem; margin-bottom: 1rem;}
+.nav-secondary{text-align: center; font-size: .9rem;}
+.nav-secondary a{text-decoration: none; color: rgba(255, 255, 255, 0.55);}
+.nav-secondary a:hover{color: #F1F1F1;}
+.nav-secondary .fa-solid{margin: 0 .4rem;}
 
-.listado-productos{margin-top: 1rem;}
-.listado-productos .imagen{margin: 0 0 .5rem 0; padding: 0;}
-.listado-productos h2{margin: 0; padding: 0;}
+/*carrusel*/
+.carousel .carousel-caption h2{text-shadow: 0.5px 0.5px #0F172B; color: #FFF; font-size: 3rem;}
+.carousel .carousel-caption .text{text-shadow: 1px 1px #000; color: #FFF; font-size: 1.2rem;}
 
-.formulario{margin: 1rem 0;}
+/*tabs*/
+.tab-products img{width: 100%; max-width: 80px;}
+.tab-products .price{color: #FEA116; font-size: 1rem;}
+.tab-products .tab-pane h3{font-size: 1.1rem;}
+.tab-products .tab-pane .text{color: #666;}
+.tab-products .nav-pills li{padding: .6rem;}
+.tab-products .nav-pills h3{font-size: 1rem; margin: 0 .4rem; font-weight: 600;}
+.tab-products .nav-pills a{color: #0F172B; text-decoration: none; }
+
+/*home valores*/
+.home-pilares{box-shadow: 0 0 45px rgba(0, 0, 0, .08); transition: .4s;}
+.home-pilares i{color: #FEA116;}
+.home-pilares:hover{background-color: #FEA116; color: #FFF;}
+.home-pilares:hover i{color: #FFF;}
+
+.formulario{margin: 0 0 1rem 0;}
 .formulario .row-form{width: 98%; margin-bottom: .5rem;}
 .formulario .form-control{background-color: #f5f5f5; border: 1px solid #979797; height: 40px; width: 100%; padding: .5rem;}
 .formulario textarea.form-control{width: 100%; height: 185px; resize: none;}
 .formulario .boton{text-align: right;}
 
-.paginador{margin: 0 0 2rem 0; text-align: center;}
+
+/*listado de productos*/
+.menu-content ul{list-style:none; margin: 0; padding: 0;}
+.menu-content ul li{border-bottom: 1px solid #f5f5f5; padding: .5rem 0; position: relative;}
+.menu-content ul li:before{font-family: "Font Awesome 6 Free"; font-weight: 900; content: "\f0da"; position: absolute; left: 0; top: 5px;}
+.menu-content ul li a{color: #040404; text-decoration: none; display: block; padding: 0 0 0 20px;}
+.menu-content ul li a:hover{color: #C1C1C1; text-decoration: none;}
+
+.listado-productos .card a:not(.btn){text-decoration: none; color: inherit;}
+.listado-productos .card p{margin:  0; padding: 0;}
+
+
+/*detalle de productos*/
+.products-details .details p{margin: 0 0 1rem 0;}
+.products-details .details .title{font-size: 1.2rem; margin: 0 0 .4rem 0;}
+.products-details .details .price{color: #FEA116; margin-bottom: .5rem; font-weight: 900; font-size: 1.3rem;}
+
+
+.paginador{margin: 0 auto 2rem auto; text-align: center; font-size: .9rem;}
 .paginador ul{margin: 0; padding: 0; list-style: none;}
 .paginador ul li{display: inline-block; margin: 0 .2rem; padding: 0;}
-.paginador ul li a{color: #7E8085; border: 1px solid #7E8085; text-decoration: none; display: block; padding: 4px 5px;}
+.paginador ul li a{color: #7E8085; border: 1px solid #7E8085; border-radius: 100px; height: 25px; width: 25px; text-decoration: none; display: block; line-height: 25px;}
 .paginador ul li a:hover{color: #000; text-decoration: none;}
 
-.footer{margin: 0; padding: .5rem 0; background-color: #414141; overflow: hidden;}
-.footer .nav a{color: #FFF; text-decoration: none;}
-.footer .nav a:hover{color: #FFF; text-decoration: underline;}
+.footer{margin: 0; padding: 1rem 0; background-color: #040404; color: #FFF;}
+.footer h4{color: #FEA116; margin: 0 0 1rem 0; padding: 0;}
+.footer ul{margin: 0; padding: 0; list-style: none;}
+.footer ul li{margin:0; padding: 0 0 .4rem 0;}
+.footer p{margin: 0; padding: 0 0 .2rem 0;}
+.footer .container a{color: #FFF; text-decoration: none;}
+.footer .container a:hover{color: #FFF; text-decoration: underline;}
 
-.btn-up{background: #FFF; border-radius: 8px; height: 30px; width: 30px; text-align: center; line-height: 30px; position: fixed; bottom: 10px; right: 10px;}
+.btn-up{background: #FFF; box-shadow: 0 0 30px rgba(0, 0, 0, .4); border-radius: 8px; height: 30px; width: 30px; text-align: center; line-height: 30px; position: fixed; bottom: 10px; right: 10px;}
+
 
 @media (max-width: 766px){
     .logo{float: none; margin-bottom: 1rem;}
     .nav{float: none; clear: both; width: 100%;}
     .nav ul{text-align: center;}
+    .footer h4{margin-top: 1rem; margin-bottom: 0;}
 
     .col-5{width: 100%;}
     .col-3{width: 100%;}
