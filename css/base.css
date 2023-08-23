@@ -11,6 +11,8 @@ h2{font-size: 18px;}
 
 .text-primary{color: #FEA116;}
 
+.badge{background-color: rgba(0,0,0,.6); font-weight: 400; border-radius: 2px 0 2px 0;}
+
 .btn-primary{background-color: #FEA116; border: none;}
 .btn-primary:hover{background-color: #FEAF39;}
 
