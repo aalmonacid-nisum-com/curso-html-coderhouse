@@ -86,7 +86,8 @@ h6 {
 
 .btn-primary {
   background-color: #FEA116;
-  border: none; }
+  border: none;
+  transition: .2s background-color; }
   .btn-primary:hover {
     background-color: #FEAF39; }
 
@@ -101,6 +102,18 @@ h6 {
   position: fixed;
   bottom: 10px;
   right: 10px; }
+
+.title-font-menlo {
+  color: #0F172B;
+  font: normal 400 2.5rem Menlo; }
+
+.text-size-m {
+  color: #FFF;
+  font: normal 400 1.6rem inherit; }
+
+.small-s {
+  color: #FFF;
+  font: normal 400 0.8rem inherit; }
 
 .carousel .carousel-caption {
   bottom: 0; }
